@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bài tập 01: Xây dựng trang giới thiệu cá nhân bằng HTML</h1>
+    <header>
+        <h2>Thông tin sinh viên</h2>
+        <ul>
+            <li>Họ và tên: Hà Nguyễn Hồng Ngọc</li>
+            <li>Mã số sinh viên: 52.01.104.061</li>
+            <li>Lớp học phần: COMP1802</li>
+        </ul>
+    </header>
+    <main>
+    <nav>
+        <a href="#about">Giới thiệu</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#SoThich">Sở thích</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#KyNang">Kỹ năng</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#TKB">Thời khóa biểu</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#LienHe">Liên hệ</a>
+    </nav>
+    <section id="about">
+        <h3>Giới thiệu ngắn</h3>
+        <article>
+            <img src="../img/Anh3x4.jpg" width="90"/>
+            <hr/>
+            Em là sinh viên năm nhất ngành công nghệ thông tin của trường Đại học Sư Phạm TPHCM.
+            Hiện đang học môn Thiết Kế Web (COMP1802) do thầy Lương Trần Hy Hiến giảng dạy.
+        </article>
+        <section id="SoThich">
+            <h3>Sở thích</h3>
+            <ul>
+                <li>Đọc sách, truyện</li>
+                <li>Đi dạo</li>
+                <li>Nghe nhạc</li>
+            </ul>
+        </section>
+        <section id="KyNang">
+            <h3>Kỹ năng</h3>
+            <ul>
+                <li>HTML5 / CSS3 / JavaScript cơ bản</li>
+                <li>Sử dụng Git và GitHub quản lý mã nguồn</li>
+            </ul>
+        </section>
+    </table>
+    <section id="TKB">
+    <h3>Thời khóa biểu</h3>
+    <table border="1" cellspacing="0" cellpadding="10" width="1000" align="center">
+        <tr align="center">
+            <td width="12%"></td>
+            <td width="12.5%">Thứ 2</td>
+            <td width="12.5%">Thứ 3</td>
+            <td width="12.5%">Thứ 4</td>
+            <td width="12.5%">Thứ 5</td>
+            <td width="12.5%">Thứ 6</td>
+            <td width="12.5%">Thứ 7</td>
+            <td width="12.5%">Chủ Nhật</td>
+        </tr>
+        <tr align="center">
+            <td>Ca 1</td>
+            <td>Thiết kế Web</td>
+            <td>Triết học Mác-Lênin</td>
+            <td></td>
+            <td>Toán rời rạc</td>
+            <td></td>
+            <td>Lập trình cơ bản</td>
+            <td></td>
+        </tr>
+        <tr align="center">
+            <td>Ca 2</td>
+            <td>Cơ sở toán trong CNTT</td>
+            <td>Cơ sở toán trong CNTT</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    </section>
+    <section id="LienHe">
+    <h3>Thông tin liên hệ</h3>
+    <a href="https://www.facebook.com/share/18nZVTZ3Nw/?mibextid=wwXIfr" target="_blank">Facebook</a> | 
+    <a href="https://github.com/hngoc2k8557-lgtm" target="_blank">GitHub</a>
+    <h3>Form liên hệ</h3><form method="post">
+      <caption>Form liên hệ</caption>
+      <table>
+        <tr>
+          <td>Họ Tên</td>
+          <td>
+            <input name="HoTen" type="text"/>
+          </td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>
+            <input name="Email" type="email"/>
+          </td>
+        </tr>
+        <tr>
+          <td>Tiêu đề</td>
+          <td><input name="Tieude" type="text"/></td>
+        </tr>
+        <tr>
+          <td>Nội dung</td>
+          <td>
+            <textarea rows="5" cols="20"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button type="sbmit">Gửi</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+    </section>
+    </main>
+    <footer>
+        <p>Bài tập thiết kế web-COMP1802-Bài 1</p>
+    </footer>
+</body>
+</html>
