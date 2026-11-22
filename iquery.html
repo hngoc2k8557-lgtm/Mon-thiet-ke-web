@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu jQuery tối thiểu</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <style>
+    #menuButton { display: none; }
+    #menu { list-style: none; padding: 0; }
+    @media (max-width: 768px) {
+      #menuButton { display: block; }
+      #menu { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <button id="menuButton">☰ MENU</button>
+  <ul id="menu">
+    <li><a href="#">HOME</a></li>
+    <li><a href="#">PRODUCT</a></li>
+    <li><a href="#">SERVICES</a></li>
+    <li><a href="#">ABOUT</a></li>
+    <li><a href="#">CONTACT</a></li>
+  </ul>
+
+  <button id="btnHide">Hide</button>
+  <button id="btnShow">Show</button>
+  <button id="btnToggle">Toggle</button>
+
+  <script>
+    $("#menuButton").click(function () {
+      $("#menu").slideToggle();
+    });
+
+    $("#btnHide").click(function () {
+      $("#menu").hide();
+    });
+
+    $("#btnShow").click(function () {
+      $("#menu").show();
+    });
+
+    $("#btnToggle").click(function () {
+      $("#menu").toggle();
+    });
+  </script>
+
+</body>
+</html>
